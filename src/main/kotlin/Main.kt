@@ -1,7 +1,12 @@
 fun main(args: Array<String>) {
 var e:Boolean=true
 
+
+//Loop to perform more than one operation
     while(e) {
+
+
+        try{
         print("Enter the first NO. :")
         var NO1 = readLine()!!.toInt()
         print("\n Enter the second NO. :")
@@ -32,7 +37,9 @@ var e:Boolean=true
           break
         }
 
-    }
+    } catch (e:Exception){
+        println("The error is: "+e+"\n try again.")
+    }}
 
 
 
